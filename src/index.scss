@@ -1,0 +1,37 @@
+:root{
+    --bg-color: #16161a;
+    --bg-color-secondary:#242629;
+  
+    --primary-color:#31c6d4;
+    --secondary-color:#f4b108;
+    
+    --text-color:#fffffe;
+    --text-secondary-color:#94a1b2;
+  
+    --primary-font:'PT Sans', sans-serif;
+    --secondary-font:'Roboto Condensed', sans-serif;
+    --navbar-height:70px;
+  }
+  
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    font-family: var(--primary-font);
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: var(--secondary-font)
+  }
+  
+
+
+@import './styles/components/Sidebar.scss';
+@import './styles/components/Navbar.scss'

@@ -1,29 +1,13 @@
 
-import React from 'react'
-
-function ProductsPage() {
-  return (
-    <div className='products-page'>
-        <div className="add-prodcut">
-            <h1>All Products</h1>
-            <button>Add Product</button>
-            <a href="">hello</a>
-        </div>
-    </div>
-  )
-}
-
-export default ProductsPage
-
 import React from 'react';
 
 function OrdersPage() {
   return (
     <div>
-      <h2>All Products</h2>
+      <h2>All Orders</h2>
       <div className="table">
       <tr>
-        <th>All</th>
+        <th>Media</th>
         <th>Product Name </th>
         <th>Price</th>
         <th>Inventery</th>
@@ -84,4 +68,3 @@ function OrdersPage() {
 }
 
 export default OrdersPage;
-

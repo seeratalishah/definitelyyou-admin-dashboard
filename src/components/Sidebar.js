@@ -21,19 +21,19 @@ function Sidebar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard/products">
+          <NavLink to="/products">
           <ShopOutlined />
             <span className="link-text">Products</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard/orders">
+          <NavLink to="/orders">
           <FormOutlined />
             <span className="link-text">Orders</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard/customers">
+          <NavLink to="/customers">
           <UsergroupAddOutlined />
             <span className="link-text">Customers</span>
           </NavLink>

@@ -4,10 +4,10 @@ import React from 'react';
 function OrdersPage() {
   return (
     <div>
-      <h2>All Orders</h2>
+      <h2>All Products</h2>
       <div className="table">
       <tr>
-        <th>Media</th>
+        <th>All</th>
         <th>Product Name </th>
         <th>Price</th>
         <th>Inventery</th>

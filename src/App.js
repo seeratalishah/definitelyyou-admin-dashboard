@@ -12,7 +12,7 @@ function App() {
    
        
 
-      <Route path="/dashboard" element={<DashboardLayout />}>
+      <Route path="/" element={<DashboardLayout />}>
 
         <Route path="products" element={<ProductsPage/>}></Route>
         <Route path="orders" element={<OrdersPage/>}></Route>

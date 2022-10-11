@@ -11,9 +11,9 @@ function Sidebar() {
       <ul className="sidebar-links">
         <li>
           <NavLink
-            to="/dashboard"
+            to="/"
             className={() =>
-              location.pathname === "/dashboard" ? "active" : ""
+              location.pathname === "/" ? "active" : ""
             }
           >
            <HomeOutlined />

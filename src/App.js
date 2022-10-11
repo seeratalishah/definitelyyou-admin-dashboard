@@ -8,10 +8,6 @@ function App() {
 
   return (
     <Routes>
-
-   
-       
-
       <Route path="/" element={<DashboardLayout />}>
 
         <Route path="products" element={<ProductsPage/>}></Route>

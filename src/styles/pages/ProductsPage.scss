@@ -1,0 +1,105 @@
+.product-page{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: calc(100vw - 228.38px);
+
+    .top-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border: 1px solid var(--text-secondary-color);
+            background-color: var(--green-color);
+            font-size: 14px;
+            transition: var(--transition);
+
+            &:hover{
+                background-color: var(--bg-color-secondary);
+                color: var(--text-color);
+            }
+        }
+    }
+
+    .nav{
+        display: flex;
+        gap: 4px;
+
+        button{
+            padding: 4px 0;
+            width: 70px;
+            border-radius: 4px;
+            border: 1px solid var(--bg-color-secondary);
+            background-color: var(--bg-color-secondary);
+            font-size: 14px;
+            color: var(--text-color);
+            transition: var(--transition);
+
+            &:hover{
+                background-color: #35373b;
+            }
+        }
+    }
+
+    .search-product{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input{
+            padding: 8px;
+            width: 100%;
+            max-width: 25%;
+            border: 1px solid var(--bg-color-secondary);
+            border-radius: 4px;
+
+            &::placeholder{
+                color: var(--bg-color-secondary);
+                font-size: 14px;
+            }
+        }
+
+        select{
+            padding: 8px;
+            background-color: var(--bg-color-secondary);
+            color: var(--text-color);
+        }
+    }
+
+    table{
+        border: 1px solid var(--bg-color-secondary);
+        background-color: #eaeef3;
+
+        tr{
+
+            th{
+                text-align: center;
+                padding: 3px 0;
+                background-color: var(--text-secondary-color);
+                border: 1px solid var(--bg-color-secondary);
+            }
+
+            td{
+                padding: 3px 0;
+                border: 1px solid var(--bg-color-secondary);
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .active{
+                color: green;
+                font-weight: 600;
+            }
+           
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+}

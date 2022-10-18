@@ -5,7 +5,7 @@ function Sidebar() {
   const location = useLocation();
   return (
     <aside>
-      <p>Tahira's Dashboard</p>
+      <p>Definitely You</p>
       <hr />
 
       <ul className="sidebar-links">

@@ -6,11 +6,11 @@ function AddProductPage() {
         <div className="top-bar">
             <h2>Add Product</h2>
             <div className="menu-items">
-                <button>Discard</button>
+                <button className='discard'>Discard</button>
                 <select name="" id="">
                     <option value="">Status</option>
                 </select>
-                <button>Save</button>
+                <button className='save'>Save</button>
             </div>
         </div>
         <div className="product-details">
@@ -48,10 +48,10 @@ function AddProductPage() {
                 </div>
                 <div className="product-media">
                     <div className="image-container">
-                        <img src="" alt="" />
+                        <img src="https://pk.khaadi.com/media/catalog/product/e/s/est22429_purple_1_5.jpg?width=633&height=950&canvas=633:950&quality=95&bg-color=255,255,255&fit=bounds" alt="" />
                     </div>
                     <div className="image-container">
-                        <img src="" alt="" />
+                        <img src="https://pk.khaadi.com/media/catalog/product/e/s/est22429_purple_1_5.jpg?width=633&height=950&canvas=633:950&quality=95&bg-color=255,255,255&fit=bounds" alt="" />
                     </div>
                 </div>
             </div>

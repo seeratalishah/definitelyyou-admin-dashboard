@@ -9,15 +9,15 @@ nav{
     }
     .logout{
         button{
-            font-size: 1rem;
+            font-size: 14px;
             line-height: 1.5;
             font-family: var(--secondary-font);
             border: none;
             border-radius: 4px;
             color: var(--text-color);
-            background-color: var(--secondary-color);
+            background-color: var(--bg-color-secondary);
             cursor: pointer;
-            padding: 9px 22px;
+            padding: 8px 1rem;
             margin-right: 13px;
             &:hover{
                 background-color: var(--bg-color);

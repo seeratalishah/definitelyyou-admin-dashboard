@@ -1,6 +1,8 @@
 :root{
     --bg-color: #16161a;
     --bg-color-secondary:#242629;
+
+    --border:  1px solid #16161a;
   
     --primary-color:#31c6d4;
     --secondary-color:#f4b108;
@@ -39,4 +41,5 @@
 @import './styles/layout/DashboardLayout.scss';
 @import './styles/pages/OrdersPage.scss';
 @import './styles/pages/ProductsPage.scss';
+@import './styles/pages/AddProductPage.scss';
 

@@ -1,70 +1,63 @@
 
-import React from 'react';
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function OrdersPage() {
+
+  const navigate = useNavigate();
   return (
-    <div>
-      <h2>All Orders</h2>
-      <div className="table">
-      <tr>
-        <th>Media</th>
-        <th>Product Name </th>
-        <th>Price</th>
-        <th>Inventery</th>
-        <th>Category</th>
-        <th>Date</th>
-        <th>Customer Id</th>
-      </tr>
-      <tr>
-        <td>img1</td>
-        <td>Frock</td>
-        <td>1000pkr</td>
-        <td>4 in stock</td>
-        <td>Fancy</td>
-        <td>02-08-22</td>
-        <td>01</td>
-      </tr>
-      <tr>
-        <td>img2</td>
-        <td>Frock</td>
-        <td>2500pkr</td>
-        <td>1 in stock</td>
-        <td>Fancy</td>
-        <td>12-08-22</td>
-        <td>05</td>
-      </tr>
-      <tr>
-        <td>img3</td>
-        <td>Frock</td>
-        <td>2000pkr</td>
-        <td>1 in stock</td>
-        <td>Fancy</td>
-        <td>02-08-22</td>
-        <td>01</td>
-      </tr>
-      <tr>
-        <td>img4</td>
-        <td>Frock</td>
-        <td>3000pkr</td>
-        <td>7 in stock</td>
-        <td>Fancy</td>
-        <td>06-08-22</td>
-        <td>09</td>
-      </tr>
-      <tr>
-        <td>img5</td>
-        <td>Frock</td>
-        <td>1000pkr</td>
-        <td>4 in stock</td>
-        <td>Fancy</td>
-        <td>02-08-22</td>
-        <td>01</td>
-      </tr>
+    <div className="product-page">
+      <div className="top-bar">
+        <h2>New Orders</h2>
+        <button onClick={()=>navigate('/addproduct')}>Add Product</button>
+      </div>
+      <div className="nav">
+        <button>All</button>
+        <button>Active</button>
+        <button>Draft</button>
+        <button>Archive</button>
+      </div>
+      <div className="search-product">
+        <input type="text" placeholder='search product by name' />
+        <select name="" id="">
+          <option value="">Sort By</option>
+          <option value="">Price</option>
+          <option value="">Date</option>
+          <option value="">Status</option>
+        </select>
+      </div>
+      <table>
+        <tr>
+          <th>Media</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Inventory</th>
+          <th>Category</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td><img src="https://pk.khaadi.com/media/catalog/product/e/s/est22429_purple_1_5.jpg?width=633&height=950&canvas=633:950&quality=95&bg-color=255,255,255&fit=bounds" alt="" /></td>
+          <td>Frock</td>
+          <td>1200 PKR</td>
+          <td>4 in stock</td>
+          <td>Fancy</td>
+          <td className='active'>Active</td>
+        </tr>
+        <tr>
+          <td><img src="https://pk.khaadi.com/media/catalog/product/e/s/est22429_purple_1_5.jpg?width=633&height=950&canvas=633:950&quality=95&bg-color=255,255,255&fit=bounds" alt="" /></td>
+          <td>Frock</td>
+          <td>1200 PKR</td>
+          <td>4 in stock</td>
+          <td>Fancy</td>
+          <td className='active'>Active</td>
+        </tr>
+      </table>
     </div>
-    </div>
-   
-    
-  );
+ 
+  )
 }
 
 export default OrdersPage;
+
+
+

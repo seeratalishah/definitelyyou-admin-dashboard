@@ -5,7 +5,7 @@ function Navbar() {
       <div className="logout">
         <button>Logout</button>
 
-        <span>Tahira Malik</span>
+        <span>Seerat Ali</span>
       </div>
     </nav>
   );

@@ -4,6 +4,8 @@
     gap: 1rem;
     padding: 2rem;
     width: calc(100vw - 228.38px);
+    height: calc(100vh - var(--navbar-height));
+    overflow-y: scroll;
 
     .top-bar{
         display: flex;

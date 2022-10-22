@@ -34,6 +34,8 @@
   h1,h2,h3,h4,h5,h6{
     font-family: var(--secondary-font)
   }
+
+  @import './styles/Table.scss';
   
 @import './styles/components/Sidebar.scss';
 @import './styles/components/Navbar.scss';
@@ -42,4 +44,5 @@
 @import './styles/pages/OrdersPage.scss';
 @import './styles/pages/ProductsPage.scss';
 @import './styles/pages/AddProductPage.scss';
+@import './styles/pages/DashboardPage.scss';
 

@@ -6,28 +6,28 @@ function CustomersPage() {
         <h2>All Customers</h2>
         <table>
         <tr>
-          <th>Media</th>
-          <th>Product Name</th>
-          <th>Price</th>
-          <th>Inventory</th>
-          <th>Category</th>
-          <th>Status</th>
+          <th>Customer Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Address</th>
         </tr>
         <tr>
-          <td><img src="https://pk.khaadi.com/media/catalog/product/e/s/est22429_purple_1_5.jpg?width=633&height=950&canvas=633:950&quality=95&bg-color=255,255,255&fit=bounds" alt="" /></td>
-          <td>Frock</td>
-          <td>1200 PKR</td>
-          <td>4 in stock</td>
-          <td>Fancy</td>
-          <td className='active'>Active</td>
+          <td>001</td>
+          <td>Seerat</td>
+          <td>Ali</td>
+          <td>seeratalykhan@gmail.com</td>
+          <td>seerat</td>
+          <td>g9/1</td>
         </tr>
         <tr>
-          <td><img src="https://pk.khaadi.com/media/catalog/product/e/s/est22429_purple_1_5.jpg?width=633&height=950&canvas=633:950&quality=95&bg-color=255,255,255&fit=bounds" alt="" /></td>
-          <td>Frock</td>
-          <td>1200 PKR</td>
-          <td>4 in stock</td>
-          <td>Fancy</td>
-          <td className='active'>Active</td>
+        <td>001</td>
+          <td>Seerat</td>
+          <td>Ali</td>
+          <td>seeratalykhan@gmail.com</td>
+          <td>seerat</td>
+          <td>g9/1</td>
         </tr>
       </table>
     </div>

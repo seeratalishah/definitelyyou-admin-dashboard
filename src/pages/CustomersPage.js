@@ -1,28 +1,10 @@
-
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 
-function OrdersPage() {
-
-  const navigate = useNavigate();
+function CustomersPage() {
   return (
-    <div className="product-page">
-
-        <h2>All Orders</h2>
-        
-     
-      <div className="nav">
-        <button>All</button>
-        <button>To be confirmed</button>
-        <button>Unpaid</button>
-        <button>Paid</button>
-        <button>To be shipped</button>
-        <button>Shipped</button>
-        <button>Completed</button>
-        <button>Cancelled</button>
-      </div>
-   
-      <table>
+    <div className='customers-page'>
+        <h2>All Customers</h2>
+        <table>
         <tr>
           <th>Media</th>
           <th>Product Name</th>
@@ -49,11 +31,7 @@ function OrdersPage() {
         </tr>
       </table>
     </div>
- 
   )
 }
 
-export default OrdersPage;
-
-
-
+export default CustomersPage

@@ -1,20 +1,19 @@
-div{
-    
-   
-    h2{
+.orders-page{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: calc(100vw - 228.38px);
 
-    }
-    .table{
-       padding: 4rem;
-        border-collapse: collapse;
-        width: 100%;
-        tr{
-            th,td{ border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-    
-            }
-            
+    .nav{
+        display: flex;
+        gap: 2px;
+
+        button{
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            background-color: var(--bg-color-secondary);
+            color: var(--text-color);
         }
     }
 }

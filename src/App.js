@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import LoginForm from "./components/LoginForm";
 import DashboardLayout from "./layout/DashboardLayout";
 import AddProductPage from "./pages/AddProductPage";
 import CustomersPage from "./pages/CustomersPage";
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/loginform" element={<LoginForm />} />
       <Route path="/" element={<DashboardLayout />}>
 
         <Route index element={<DashboardPage />} />

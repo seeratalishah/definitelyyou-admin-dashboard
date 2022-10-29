@@ -1,15 +1,24 @@
-import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import { useDispatch, useSelector } from 'react-redux';
+import { logoutUser, selectUserName } from '../store/userSlice';
 function Navbar() {
 
+  const userName = useSelector(selectUserName);
 
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const logout = ()=>{
+    dispatch(logoutUser);
+    toast.success("Logout successfully");
+  }
+
   return (
     <nav>
       <h1>LOGO</h1>
       <div className="logout">
-        <button onClick={()=>navigate('/loginform')}>Logout</button>
+        <button onClick={logout()}>Logout</button>
 
-        <span>Seerat Ali</span>
+        <span>{userName}</span>
       </div>
     </nav>
   );

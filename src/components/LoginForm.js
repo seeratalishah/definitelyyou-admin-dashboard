@@ -4,12 +4,15 @@ import { Link, useNavigate } from "react-router-dom";
 import validator from "validator";
 import toast from "react-hot-toast";
 import { loginUser } from "../apis/authApi";
+import { useDispatch } from "react-redux";
+import { loginUser as loginUserAction } from '../store/userSlice';
 
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -27,13 +30,17 @@ function LoginForm() {
         if (res.ok) {
           const { data } = await res.json();
           window.localStorage.setItem("token", data.token);
-          window.sessionStorage.setItem("token", data.token);
-          console.log(window.localStorage.getItem("token"));
-          toast.success("Logged in user successfully");
+          toast.success("logged in successfully");
+
+          dispatch(loginUserAction({
+            userName: data.first_name,
+            userId: data.user_id
+          }));
+
           navigate("/");
         }
       } catch (err) {
-        toast.error("Invalid credentials!");
+        toast.error("Invalid cradentials");
       }
     }
   };

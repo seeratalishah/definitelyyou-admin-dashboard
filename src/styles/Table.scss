@@ -18,12 +18,14 @@
                 border: 1px solid var(--bg-color-secondary);
                 font-size: 14px;
                 text-align: center;
+
+                .action{
+                  display: flex;
+                  gap: 5px;
+                }
             }
 
-            .active{
-                color: green;
-                font-weight: 600;
-            }
+            
            
         }
         img{
